@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+                 /*------------- header ---------------------*/
+header{
+    background-color: aquamarine;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    text-transform:capitalize;
+    font-weight: 700;
+    font-size: 1.8em;
+
+
+} 
+.navigation a{
+    color: blue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: blanchedalmond;
+    background-color: black;
+    padding: 10px;
+    transition: 0.8s;
+
+}
+                            /* ---------section----- */
+
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imges/2.jpg) no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;                      
+                                           /* لما بتنزل الصوره بتفضل ثابته */
+}
+.main h2 {
+    color: azure;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span {
+    color: blue;
+    font-size: 4.1em;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.main h3{
+    color: azure;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main .main-icons{
+    background-color:blue;
+    color:blanchedalmond;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.main .main-icons:hover{
+    background-color: rgb(183, 224, 35);
+    transition: 0.8s;
+    transform: scale(1.1);
+    
+}
+
+.main a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 300;
+    border-style: none;
+    border-radius: 20px 30px 10px 20px ;
+    transition: 0.8s;
+  
+}
+.main .social-icons a{
+    margin: 10px;
+    padding: 10px;
+    color:white;
+    font-size: 30px;
+}
+                                           /* <!-- --------Services------- -->*/
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    font-weight: 800;
+}     
+
+
+.content{
+     
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cardes{
+    background-color: azure;
+    width: 18.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1);         /*   دا ال عامل الظلام بين التلات مستاطيلات*/
+    border-radius: 10px;
+    padding: 5px;
+     margin: 10px; 
+    transition: 0.8s;
+}
+.cardes:hover{
+  transform: scale(1.1);
+}
+
+.icon {
+    color: blue;
+    font-size: 5em;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+.text p{
+    font-size: 1.2em;
+    color: black;
+    font-weight: 700;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+.text h3{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 800;
+
+}
+                                       /* section2 */
+.Projects{
+    background-color: black;
+}
+.Projects .content{
+    margin-top: 30px;
+}
+.projects-cards{
+    background-color: white;
+    border: 1PX solid white;
+    min-height: 14em;
+    width: 18em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.projects-cards:hover{
+    transform: scale(1.1);
+}
+.projects-imges img{
+    width: 100%;
+}
+.projects-cards:hover .projects-imges{
+    opacity: 0.9;
+}
+.projects-cards .projects-info .more-details{
+    padding-left: 2em;
+}
+.projects-category{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.projects-cards .projects-title span{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* margin-top: 10px; */
+    margin: 10px;
+}
+
+
+.more-details{
+    text-decoration: none;
+    color: blueviolet;
+     
+}
+.more-details:hover{
+    color: blue;
+}
+.content .cardes .phone{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.content .cardes .email{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+                                    /* footer */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .social-icons a{
+   
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+
+}
+.footer .footer-title{
+    margin-left: 5em;
+    font-size: 20px;
+}
+.footer .footer-title span{
+    color: blue;
+}
+
+@media (max-width:1023px) {
+   header{
+    padding : 12px 20px ;
+}
+  .navigation a{
+    padding-left: 10px;
+  }
+  .title{
+    font-size: 1.8em;
+  }
+  section{
+    padding: 80px 20px;
+  }
+  .main-content h2{
+    font-size: 1em;
+  }
+  .main-content h3{
+    font-size: 1.6em;
+  }
+  /* .content{
+    flex-direction: column;
+    align-items: center;
+  }
+     */
+     .main h2 span{
+        font-size: 2em;
+     }
+     .footer .footer-title{
+        margin-left: 3em;
+        font-size: 15px}
+.footer .social-icons a{
+   
+            padding: 3px;
+            font-size: 15px;
+        
+    }
+    .main a{
+        
+        font-size: 20px;
+        font-weight: 200;
+        
+    }
+}
+@media (max-width:411px){
+.logo{
+        
+        text-transform:capitalize;
+        font-weight: 300;
+        font-size: 1.2em;
+
+    
+    
+    } 
+.navigation a{
+        
+        font-size: 0.7em;
+        font-weight: 800;
+        padding-left: 18px;
+     
+    }
+.navigation a:hover{
+        color: blanchedalmond;
+        background-color: black;
+        padding: 10px;
+        transition: 0.8s; }
+.footer .social-icons a{
+   
+            padding: 5px;
+            font-size: 20px;
+            color: white;
+        
+        }
+.footer .footer-title{
+            margin-left: 1em;
+            font-size: 12px;
+        }
+
+}
